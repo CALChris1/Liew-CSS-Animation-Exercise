@@ -1,0 +1,209 @@
+#first {
+  border: 1px solid red;
+  height: 50px;
+  width: 150px;
+  max-width: 350px;
+  background-color: red;
+  animation: red-animation 4s 3 linear alternate;
+}
+
+@keyframes red-animation {
+  0% {
+    width: 150px;
+  }
+
+  25% {
+    width: 350px;
+  }
+
+  50% {
+    width: 350px;
+  }
+
+  75% {
+    width: 150px;
+  }
+
+  100% {
+    width: 150px;
+  }
+}
+
+#second {
+  border: 1px solid blue;
+  background-color: blue;
+  height: 50px;
+  width: 150px;
+  max-width: 350px;
+  margin-top: 20px;
+  animation: blue-animation 4s 3 1s linear alternate;
+}
+
+@keyframes blue-animation {
+  0% {
+    width: 150px;
+  }
+
+  25% {
+    width: 350px;
+  }
+
+  50% {
+    width: 350px;
+  }
+
+  75% {
+    width: 150px;
+  }
+
+  100% {
+    width: 150px;
+  }
+}
+
+.part-2 {
+  position: relative;
+}
+
+#blue {
+  border: 1px solid blue;
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  left: 100px;
+  top: 100px;
+  z-index: 3;
+  animation: small-animation 2s linear infinite normal;
+}
+
+#green {
+  border: 1px solid green;
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  left: 75px;
+  top: 25px;
+  z-index: 2;
+  animation: medium-animation 4s linear infinite normal;
+}
+
+#orange {
+  border: 1px solid orangered;
+  background-color: orangered;
+  height: 150px;
+  width: 150px;
+  bottom: 100px;
+  left: 50px;
+  z-index: 1;
+  animation: large-animation 6s linear infinite normal;
+}
+
+span {
+  border: 1px solid black;
+  width: 60px;
+}
+
+@keyframes small-animation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes medium-animation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes large-animation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+h4 {
+  position: relative;
+  top: 100px;
+  left: 370px;
+}
+.part-3 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+
+
+#one {
+  border: 1px solid red;
+  background-color: red;
+  left: 300px;
+  animation: one-animation 2s linear 1s infinite alternate;;
+  transform-origin: top left;
+}
+
+#two {
+  border: 1px solid yellow;
+  background-color: yellow;
+  left: 375px;
+  bottom: 77px;
+  animation: second-animation 2s linear 1s infinite alternate;
+  transform-origin: top right;
+}
+
+#three {
+  border: 1px solid blue;
+  background-color: blue;
+  left: 300px;
+  bottom: 77px;
+  animation: third-animation 2s linear 1s infinite alternate;
+  transform-origin: bottom left;
+}
+
+#four {
+  border: 1px solid green;
+  background-color: green;
+  left: 375px;
+  bottom: 154px;
+  animation: forth-animation 2s linear 1s infinite alternate;
+  transform-origin: bottom right;
+}
+
+@keyframes one-animation {
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes second-animation {
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes third-animation {
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes forth-animation {
+  50% {
+    transform: rotate(90deg)
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
